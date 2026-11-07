@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>病媒管制 Week 01 埃及斑蚊與登革熱防治｜課程重點簡報</title>
+  <link rel="stylesheet" href="../../css/slides.css">
+</head>
+<body>
 
+  <!-- 1 封面 -->
+  <section class="slide cover">
+    <div class="titles">
+      <h1>Week 01:埃及斑蚊與登革熱防治</h1>
+      <p class="hint">按 ← → 或滑動翻頁</p>
+    </div>
+    <p class="course">病媒管制 (Vector Control)</p>
+  </section>
+
+  <!-- 2 學習目標 -->
+  <section class="slide">
+    <h2>本週學習目標</h2>
+    <ul>
+      <li>說明傳統防治的侷限與新策略的需求</li>
+      <li>比較基因改造蚊的 effector 與 driver gene</li>
+      <li>理解登革病毒機械性傳播及其證據</li>
+      <li>說明 Wolbachia、CI 與抑制型、取代型差異</li>
+      <li>了解國際成效與台灣推動的挑戰</li>
+    </ul>
+    <span class="source">原 PPT p.2–98、101–174</span>
+  </section>
+
+  <!-- 3 背景與傳統防治 -->
+  <section class="slide concept">
+    <h2>背景與傳統防治的侷限</h2>
+    <ul>
+      <li>登革熱:RNA 病毒,由 Aedes 蚊傳播;每年感染逾 1 億人、死亡逾 5 萬人 (待確認)</li>
+      <li>登革病毒有 4 種血清型 (DEN1–4),皆可造成完整病程</li>
+      <li>病媒:埃及斑蚊 (Aedes aegypti)、白線斑蚊 (Aedes albopictus)</li>
+      <li>噴藥除蚊:蚊子產生抗藥性,且影響非目標物種</li>
+      <li>孳生源清除 (Source reduction) 為基本做法,但尚無藥物與疫苗</li>
+    </ul>
+    <!-- TODO: fig-01 原 PPT p.5(精確結構:埃及斑蚊/白線斑蚊,待提供裁切圖)
+    把本張改為 class="slide concept with-figure" 並加入:
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-01.webp" alt="埃及斑蚊與白線斑蚊外觀比較" loading="lazy">
+      <figcaption>圖 1:兩種主要病媒蚊的外觀差異</figcaption>
+    </figure> -->
+    <span class="source">原 PPT p.2–8(圖見原 PPT p.5)</span>
+  </section>
+
+  <!-- 4 基因改造策略總覽 -->
+  <section class="slide concept with-figure">
+    <h2>基因改造策略總覽:合成抗病原蚊群</h2>
+    <ul>
+      <li>目標:使野生蚊群逐代轉為不傳播疾病的族群</li>
+      <li>需要兩部分:效應基因 (Effector gene) 與基因驅動 (Driver gene)</li>
+      <li>Effector gene:賦予病毒抗性;Driver gene:把它散播進族群</li>
+      <li>解法:將病原抗性連結到自私遺傳元件 (Selfish genetic element)</li>
+      <li>Effector 兩條路線:針對登革基因體或蚊基因、改變尋宿行為</li>
+    </ul>
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-02.svg" alt="示意圖:帶病原抗性的自私遺傳元件加上傳播疾病的野生族群,經過數個世代後族群轉為不傳播疾病" loading="lazy">
+      <figcaption>圖 2:合成抗病原蚊群的概念(示意圖)</figcaption>
+    </figure>
+    <span class="source">原 PPT p.9–12、25、37、46</span>
+  </section>
+
+  <!-- 5 Effector 1:miRNA -->
+  <section class="slide concept">
+    <h2>Effector ①:抗病毒 microRNA 蚊</h2>
+    <ul>
+      <li>以多個 microRNA 同時抑制單一或多個登革病毒基因體</li>
+      <li>microRNA 由血餐誘導啟動子 (Blood meal induced promoter) 驅動</li>
+      <li>抗四型登革的「all in one 8-miR」轉基因蚊,具抗 DENV 表現型</li>
+      <li>Aedes 為登革、屈公病 (CHIKV)、Zika 三種病毒的主要病媒</li>
+      <li>同一策略延伸至 anti-CHIKV 與 anti-ZIKV 蚊,後者可阻止病毒傳播</li>
+    </ul>
+    <span class="source">原 PPT p.13–24</span>
+  </section>
+
+  <!-- 6 Effector 1:GCTL-3 -->
+  <section class="slide concept">
+    <h2>Effector ①:C 型凝集素 GCTL-3</h2>
+    <ul>
+      <li>C-type lectin:具糖結合活性,參與先天免疫與病毒致病</li>
+      <li>埃及斑蚊基因體中有 27 個 C-type lectin 蛋白</li>
+      <li>敲低 mosGCTL-3 可抑制四型登革複製,且可與 DENV-2 交互作用</li>
+      <li>以 CRISPR/Cas9 製作 GCTL3 突變蚊,用 eGFP 標記篩選</li>
+      <li>突變蚊血餐後第 7 天,DENV 病毒量下降</li>
+    </ul>
+    <span class="source">原 PPT p.26–36</span>
+  </section>
+
+  <!-- 7 Effector 2:尋宿行為 -->
+  <section class="slide concept">
+    <h2>Effector ②:改變尋宿行為</h2>
+    <ul>
+      <li>蚊子以氣味找人;indole 天然存在於人類糞便</li>
+      <li>OBP4 對 indole 親和力高於 OBP1,兩者共位於感覺毛 (Sensilla)</li>
+      <li>OBP1、OBP4 對 Anopheles gambiae 感知 indole 同樣重要</li>
+      <li>於埃及斑蚊敲除 OBP (OBP1、OBP34、OBP39),影響尋宿行為</li>
+      <li>以自動記錄裝置量化尋宿行為,人工環境可重現</li>
+    </ul>
+    <span class="source">原 PPT p.38–45</span>
+  </section>
+
+  <!-- 8 Medea -->
+  <section class="slide concept with-figure">
+    <h2>基因驅動:Medea</h2>
+    <ul>
+      <li>Medea:赤擬穀盜 (Tribolium castaneum) 的天然母體自私元件</li>
+      <li>非孟德爾遺傳:後代遺傳率 100%(孟德爾為 50%)</li>
+      <li>合成 Medea:母體毒素 microRNA 阻斷必要基因,胚胎期表現解藥</li>
+      <li>三要素:母體啟動子、早期合子啟動子、毒素與解藥的標的基因</li>
+      <li>以 Drosophila 資料定義母體專一基因,並以 shRNAi 靶向 Dah</li>
+    </ul>
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-03.svg" alt="示意圖:母體毒素於卵發生期阻斷必要基因,帶合子解藥基因的胚胎存活,不帶者死亡" loading="lazy">
+      <figcaption>圖 3:Medea 的毒素與解藥概念(示意圖,待確認)</figcaption>
+    </figure>
+    <span class="source">原 PPT p.47–57</span>
+  </section>
+
+  <!-- 9 機械傳播原理 -->
+  <section class="slide concept">
+    <h2>機械性傳播的原理 (Mechanical transmission)</h2>
+    <ul>
+      <li>病原傳播途徑:接觸、飛沫、空氣、病媒 (昆蟲)</li>
+      <li>生物性病媒 (Biological vector):病原在其體內參與生活史</li>
+      <li>機械性病媒 (Mechanical vector):僅攜帶並傳遞病原</li>
+      <li>蚊子口器 (Proboscis) 有雙向液體交換</li>
+      <li>已知機械傳播:fowl pox、myxomatosis;登革病毒呢?</li>
+    </ul>
+    <!-- TODO: fig-04 原 PPT p.63(精確結構:蚊子口器剖面,待提供裁切圖)
+    把本張改為 class="slide concept with-figure" 並加入:
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-04.webp" alt="蚊子口器與液體交換方向示意" loading="lazy">
+      <figcaption>圖 4:蚊子口器構造</figcaption>
+    </figure> -->
+    <span class="source">原 PPT p.58–64(圖見原 PPT p.63)</span>
+  </section>
+
+  <!-- 10 EIP 與群聚 -->
+  <section class="slide concept with-figure">
+    <h2>EIP 與群聚現象</h2>
+    <ul>
+      <li>台灣 2014、2015 年兩次大流行;TW2015 株毒力與蚊媒傳播力皆高</li>
+      <li>理論:EIP 8–12 天 + IIP 3–14 天,人傳人需 11–26 天</li>
+      <li>理論上群聚間隔至少 11 天;實際 85% 相隔不到 5 天</li>
+      <li>理論上群聚應多在 100 m 內,實際僅 67/397 (16%)</li>
+      <li>田間捕獲的埃及斑蚊,登革陽性率僅 0.5–2%</li>
+    </ul>
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-05.svg" alt="示意圖:感染者被蚊叮咬後,經蚊體內 EIP 8 至 12 天,再叮咬另一人,人體內 IIP 3 至 14 天" loading="lazy">
+      <figcaption>圖 5:EIP 與 IIP 的時間關係(示意圖)</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-06.svg" alt="示意圖:三個群聚的房屋落在半徑 100 公尺的範圍內" loading="lazy">
+      <figcaption>圖 6:理論上群聚多落在 100 m 內(示意圖)</figcaption>
+    </figure>
+    <span class="source">原 PPT p.65–83</span>
+  </section>
+
+  <!-- 11 機械傳播實驗與模型 -->
+  <section class="slide concept">
+    <h2>機械傳播的實驗與模型</h2>
+    <ul>
+      <li>TW2015 DENV 可經共用針具在 AGB6 小鼠間傳播</li>
+      <li>被 DENV 暴露的埃及斑蚊叮咬 4 次可感染小鼠,最少僅需 2 次</li>
+      <li>口器 (Proboscis) 殘留的 DENV 可介導機械傳播</li>
+      <li>數學模型比較「僅標準傳播」與「標準 + 機械傳播」</li>
+      <li>結論:EIP 可能非必要;機制或適用 Zika、瘧疾</li>
+    </ul>
+    <span class="source">原 PPT p.84–98</span>
+  </section>
+
+  <!-- 12 台灣流行病學與 WHO 工具 -->
+  <section class="slide concept">
+    <h2>台灣流行病學與 WHO 評估工具</h2>
+    <ul>
+      <li>南部為埃及斑蚊主要棲地,主要傳播登革與 Zika</li>
+      <li>1998–2016:78,022 例中約 96% 來自南部三市</li>
+      <li>1998–2018:98.4% 來自南部三縣市;2018 年 92% 非南部</li>
+      <li>WHO 於 2016 年 3 月審查五種病媒控制工具</li>
+      <li>五種:Wolbachia、OX513A、昆蟲不育技術、媒介陷阱、毒糖餌</li>
+    </ul>
+    <!-- TODO: fig-07 原 PPT p.101(精確結構:台灣南部地圖,待提供裁切圖,可選)
+    把本張改為 class="slide concept with-figure" 並加入:
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-07.webp" alt="台灣南部三市登革熱病例分布地圖" loading="lazy">
+      <figcaption>圖 7:登革熱病例集中於南部三市</figcaption>
+    </figure> -->
+    <span class="source">原 PPT p.101–105(圖見原 PPT p.101)</span>
+  </section>
+
+  <!-- 13 Wolbachia 與 CI -->
+  <section class="slide concept with-figure">
+    <h2>沃爾巴克氏體 (Wolbachia) 與 CI</h2>
+    <ul>
+      <li>天然存在的細菌,生活在昆蟲細胞內</li>
+      <li>約 60% 昆蟲種類帶有;埃及斑蚊本身沒有</li>
+      <li>經卵傳給後代;對人類、動物與環境安全</li>
+      <li>效應:抗病毒、縮短宿主壽命、調控生殖 (細胞質不相容性 CI)</li>
+      <li>不是基因改造、不是不孕雄蚊釋放、不是物種根除</li>
+    </ul>
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-08.svg" alt="示意圖:雄蚊帶 Wolbachia、雌蚊不帶時胚胎無法孵化,其餘三種交配組合正常孵化" loading="lazy">
+      <figcaption>圖 8:細胞質不相容性 (CI) 的交配組合(示意圖)</figcaption>
+    </figure>
+    <span class="source">原 PPT p.107–111、154、167</span>
+  </section>
+
+  <!-- 14 兩種策略與量產 -->
+  <section class="slide concept with-figure">
+    <h2>兩種防治策略與蚊子量產</h2>
+    <ul>
+      <li>族群抑制 (Suppression):僅釋放帶菌雄蚊,與野生雌蚊交配無子代</li>
+      <li>族群取代 (Replacement):雌雄皆釋放,逐漸取代野生族群</li>
+      <li>抑制型需雌雄分離:利用公母蛹性腺發育時間差,X 光破壞雌性性腺</li>
+      <li>雌蛹比雄蛹大;分選法含蛹大小、成蚊型態、基因標記</li>
+      <li>新加坡 2016–2019 自行開發量產機器與技術</li>
+    </ul>
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-09.svg" alt="示意圖:持續釋放帶 Wolbachia 雄蚊,蚊群數量隨時間下降" loading="lazy">
+      <figcaption>圖 9:族群抑制的蚊群變化(示意圖)</figcaption>
+    </figure>
+    <figure>
+      <img src="../../assets/vector-control/week-01/fig-10.svg" alt="示意圖:野生型比例隨時間下降,帶 Wolbachia 族群比例上升並取代野生型" loading="lazy">
+      <figcaption>圖 10:族群取代的族群比例變化(示意圖)</figcaption>
+    </figure>
+    <span class="source">原 PPT p.114–119、123、141、153</span>
+  </section>
+
+  <!-- 15 全球成效 -->
+  <section class="slide concept">
+    <h2>全球實證成效</h2>
+    <ul>
+      <li>美國 (2017, Google Verily, 加州):族群抑制達 95% suppression</li>
+      <li>新加坡:登革陽性率 21% → 6%,保護效力 71–72%</li>
+      <li>新加坡成效各年齡性別皆有,可持續至 24 個月</li>
+      <li>世界蚊子計畫 (WMP) 推動取代型;澳洲、印尼日惹皆有計畫</li>
+      <li>取代型試驗:wMel 盛行率中位數 95.8%,病例降 77%、住院降 86%</li>
+    </ul>
+    <span class="source">原 PPT p.125、152、155–161</span>
+  </section>
+
+  <!-- 16 台灣現況與挑戰 -->
+  <section class="slide concept">
+    <h2>台灣現況與挑戰</h2>
+    <ul>
+      <li>已建立技術平台與田間測試場域;品系為 wAlbB-TW</li>
+      <li>wAlbB-TW 感染株具 CI,且可抑制登革病毒</li>
+      <li>釋放感染雄蚊比例愈高,卵孵化率愈低(依圖趨勢)</li>
+      <li>六大挑戰:法規、型別與產地、量產、噴藥整合、社區接受、成效證明</li>
+      <li>需從研究計畫走向國家級 Wolbachia 防治計畫</li>
+    </ul>
+    <span class="source">原 PPT p.164–170、172、174</span>
+  </section>
+
+  <!-- 17 比較表 -->
+  <section class="slide">
+    <h2>比較表:抑制型 vs 取代型</h2>
+    <table>
+      <tr><th>項目</th><th>族群抑制 (Suppression)</th><th>族群取代 (Replacement)</th></tr>
+      <tr><td>釋放對象</td><td>只釋放帶 Wolbachia 雄蚊</td><td>帶 Wolbachia 雄蚊、雌蚊皆釋放</td></tr>
+      <tr><td>原理</td><td>與野生雌蚊交配,無法產生子代</td><td>逐漸將野生族群替換為帶菌族群</td></tr>
+      <tr><td>製造</td><td>需雌雄分離</td><td>無需雌雄分離</td></tr>
+      <tr><td>成本</td><td>較高</td><td>相對較低</td></tr>
+      <tr><td>民眾感受與溝通</td><td>雄蚊不叮人,較不覺得蚊子增加,較易溝通</td><td>(講義未提)</td></tr>
+    </table>
+    <span class="source">原 PPT p.114–117、153、156</span>
+  </section>
+
+  <!-- 18 術語表 -->
+  <section class="slide">
+    <h2>術語表</h2>
+    <table>
+      <tr><th>English</th><th>中文</th><th>一句話解釋</th></tr>
+      <tr><td>Dengue virus (DENV)</td><td>登革病毒</td><td>RNA 病毒,有 4 種血清型</td></tr>
+      <tr><td>Effector gene</td><td>效應基因</td><td>賦予蚊子病毒抗性的基因</td></tr>
+      <tr><td>Gene driver</td><td>基因驅動</td><td>讓特定基因在族群中擴散的遺傳元件</td></tr>
+      <tr><td>Medea</td><td>Medea 元件</td><td>母體毒素加合子解藥的自私元件</td></tr>
+      <tr><td>C-type lectin</td><td>C 型凝集素</td><td>具糖結合活性、參與免疫的蛋白</td></tr>
+      <tr><td>Odorant-binding protein (OBP)</td><td>氣味結合蛋白</td><td>協助感知 indole 等氣味,影響尋宿</td></tr>
+      <tr><td>Mechanical transmission</td><td>機械性傳播</td><td>病毒殘留口器,不經蚊體內複製即傳給下一宿主</td></tr>
+      <tr><td>Extrinsic incubation period (EIP)</td><td>外在潛伏期</td><td>病毒在蚊體內的時間,8–12 天</td></tr>
+      <tr><td>Intrinsic incubation period (IIP)</td><td>內在潛伏期</td><td>人體內感染到發病,3–14 天</td></tr>
+      <tr><td>Wolbachia</td><td>沃爾巴克氏體</td><td>經卵傳遞的細菌,可降低蚊子傳病能力</td></tr>
+      <tr><td>Cytoplasmic incompatibility (CI)</td><td>細胞質不相容性</td><td>帶菌雄蚊與不帶菌雌蚊交配,胚胎無法孵化</td></tr>
+      <tr><td>Population suppression</td><td>族群抑制</td><td>釋放帶菌雄蚊,使蚊群下降</td></tr>
+      <tr><td>Population replacement</td><td>族群取代</td><td>釋放雌雄帶菌蚊,替換野生族群</td></tr>
+    </table>
+    <span class="source">原 PPT p.2–174</span>
+  </section>
+
+  <!-- 19 考前必背 -->
+  <section class="slide must-know">
+    <h2>考前必背<span class="seal">必背</span></h2>
+    <ol>
+      <li>傳統噴藥有抗藥性與非目標物種問題</li>
+      <li>合成抗病原蚊群 = effector + driver gene</li>
+      <li>Medea = 母體毒素 + 合子解藥,屬 gene driver</li>
+      <li>EIP 8–12 天 + IIP 3–14 天 = 11–26 天</li>
+      <li>口器殘留 DENV 可機械傳播,2 次叮咬即可</li>
+      <li>CI:帶菌雄蚊 × 不帶菌雌蚊 → 無子代</li>
+      <li>抑制型成本高、取代型成本低;新加坡保護效力 71–72%</li>
+    </ol>
+    <span class="source">原 PPT p.9–10、48–49、62、69、88、109、117、152</span>
+  </section>
+
+  <!-- 20 自我測驗 -->
+  <section class="slide quiz">
+    <h2>自我測驗</h2>
+    <details>
+      <summary>Q1:合成抗病原蚊群需要哪兩個基因部分?</summary>
+      <p>效應基因 (Effector gene) 賦予病毒抗性,基因驅動 (Driver gene) 將它散播進族群。(p.10)</p>
+    </details>
+    <details>
+      <summary>Q2:登革病毒理論上人傳人需多久?為何 2015 高雄群聚資料與此矛盾?</summary>
+      <p>EIP 8–12 天加 IIP 3–14 天,共 11–26 天;但 85% 的群聚首例與次例相隔不到 5 天。(p.69、79)</p>
+    </details>
+    <details>
+      <summary>Q3:什麼是機械性傳播?小鼠實驗最少需幾次叮咬?</summary>
+      <p>病毒殘留於口器、未經蚊體內複製即傳給下一宿主;最少 2 次叮咬即可感染小鼠。(p.88–89)</p>
+    </details>
+    <details>
+      <summary>Q4:CI 發生在哪種交配組合?</summary>
+      <p>帶 Wolbachia 的雄蚊與不帶的雌蚊交配,胚胎無法孵化。(p.109、167)</p>
+    </details>
+    <details>
+      <summary>Q5:族群抑制與族群取代各釋放什麼?何者成本較低?</summary>
+      <p>抑制只放帶菌雄蚊,成本較高;取代雌雄皆放,成本相對較低。(p.117)</p>
+    </details>
+    <p><a href="../../index.html">返回目錄</a></p>
+  </section>
+
+  <script src="../../js/slides.js"></script>
+</body>
+</html>

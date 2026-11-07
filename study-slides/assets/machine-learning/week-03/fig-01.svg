@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="過擬合示意圖">
+<rect width="480" height="300" fill="#faf8f3"/>
+<g stroke="#2e2e2b" stroke-width="1"><line x1="40" y1="260" x2="450" y2="260"/><line x1="40" y1="260" x2="40" y2="30"/></g>
+<path d="M50 220 Q150 60 250 140 T440 70" fill="none" stroke="#8d9b7e" stroke-width="3"/>
+<path d="M50 220 L90 150 L125 215 L165 95 L205 190 L245 120 L285 175 L325 85 L365 145 L405 60 L440 80" fill="none" stroke="#b8433a" stroke-width="2"/>
+<g fill="#3d5a6c"><circle cx="90" cy="150" r="5"/><circle cx="125" cy="215" r="5"/><circle cx="165" cy="95" r="5"/><circle cx="205" cy="190" r="5"/><circle cx="245" cy="120" r="5"/><circle cx="285" cy="175" r="5"/><circle cx="325" cy="85" r="5"/><circle cx="365" cy="145" r="5"/><circle cx="405" cy="60" r="5"/></g>
+<g font-family="sans-serif" font-size="13" fill="#2e2e2b"><text x="300" y="285">輸入 x</text><text x="46" y="24">輸出 y</text>
+<text x="150" y="50" fill="#8d9b7e">適當的模型</text><text x="300" y="215" fill="#b8433a">過擬合:穿過每個點</text></g>
+</svg>
